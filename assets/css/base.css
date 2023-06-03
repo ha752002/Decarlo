@@ -1,0 +1,30 @@
+:root {
+    --white-color: #FFFFFF;
+    --black-color: #171719;
+    --text-color: #777;
+}
+
+body {
+    font-family: 'Lato';
+}
+
+html {
+    /* mặc định các trình duyệt đều nghĩ font-size: 100% = 16px */
+    font-size: 62.5%;
+    /* line-height: 1.6rem;
+    box-sizing: border-box; */
+}
+
+
+.grid {
+    width: 1440px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
