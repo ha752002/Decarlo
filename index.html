@@ -8,6 +8,15 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,100&family=Lobster&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -15,18 +24,28 @@
         <!-- header -->
         <header class="header">
             <div class="header-top">
-                <div class="grid">
-                    <div class="header-top__item">
-                        <span class="header-top__item-text">FREE SHIPPING IN ITALIAN</span>
-                    </div>
-                    <div class="header-top__item">
-                        <span class="header-top__item-text">Italian</span>
-                        <i class="header-top-icon select-input__icon fas fa-angle-down"></i>
-                    </div>
+                <div class="header-top__item">
+                    <span class="header-top__item-text">FREE SHIPPING IN ITALIAN</span>
+                </div>
+                <div class="header-top__item">
+                    <span class="header-top__item-text">Italian</span>
+                    <i class="header-top-icon select-input__icon fas fa-angle-down"></i>
+                    <!-- No List:  header-top__item-List -->
+                    <ul class="header-top__list-opition">
+                        <li class="header-top__item-opition">
+                            <span>VietNamese</span>
+                        </li>
+                        <li class="header-top__item-opition">
+                            <span>French </span>
+                        </li>
+                        <li class="header-top__item-opition">
+                            <span>Japanese </span>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="header-main">
-                <div class="grid">
+                <div class="header-main__wrap">
                     <div class="header-main__logo">
                         <img class="header-main__logo-img" src="assets/image/logo.png" alt="">
                     </div>
@@ -34,27 +53,27 @@
                         <nav class="header-main__nav">
                             <ul class="header-main__list">
                                 <li class="header-main__item">
-                                    <a href="" class="header-main__item-link">
+                                    <a href="#" class="header-main__item-link">
                                         <p class="header-main__item-text">SHOP</p>
                                     </a>
                                 </li>
                                 <li class="header-main__item">
-                                    <a href="" class="header-main__item-link">
+                                    <a href="#" class="header-main__item-link">
                                         <p class="header-main__item-text">OUR HISTORY</p>
                                     </a>
                                 </li>
                                 <li class="header-main__item">
-                                    <a href="" class="header-main__item-link">
+                                    <a href="#" class="header-main__item-link">
                                         <p class="header-main__item-text">JEWELERY PRODUCTION</p>
                                     </a>
                                 </li>
                                 <li class="header-main__item">
-                                    <a href="" class="header-main__item-link">
+                                    <a href="#" class="header-main__item-link">
                                         <p class="header-main__item-text">BECOME A DEALER</p>
                                     </a>
                                 </li>
                                 <li class="header-main__item">
-                                    <a href="" class="header-main__item-link">
+                                    <a href="#" class="header-main__item-link">
                                         <p class="header-main__item-text">CONTACT</p>
                                     </a>
                                 </li>
@@ -64,25 +83,158 @@
                     <div class="header-main__icon">
                         <nav class="header-icon__nav">
                             <ul class="header-icon__list">
-                                <li class="header-icon__item">
+                                <li class="header-icon__item header-main-search">
                                     <a href="" class="header-icon__item-link">
                                         <img class="header-icon__item-img" src="assets/image/Group 713.png" alt="">
                                     </a>
+                                    <div class="header-has-search">
+                                        <input type="search" placeholder="  Tìm kiếm">
+                                    </div>
                                 </li>
-                                <li class="header-icon__item">
+                                <li class="header-icon__item header-main-notify">
                                     <a href="" class="header-icon__item-link">
                                         <img class="header-icon__item-img" src="assets/image/love.png" alt="">
                                     </a>
+                                    <div class="navbar__notify">
+                                        <header class="navbar__notify-header">
+                                            <h3>Thông Báo Mới Nhận</h3>
+                                        </header>
+                                        <ul class="navbar__notify-list">
+                                            <li class="navbar__notify-item navbar__notify-item--viewed">
+                                                <a href="" class="navbar__notify-link">
+                                                    <img src="assets/image/notify.png" alt=""
+                                                        class="navbar__notify-img">
+                                                    <div class="navbar__notify-info">
+                                                        <span class="navbar__notify-name">Trang sức Ohui Chính Hãng Sản
+                                                            Phẩm Hàn Quốc Có Mặt Tại Việt Nam 20 năm </span>
+                                                        <span class="navbar__notify-descriotion">Đôi khi những gì chúng
+                                                            ta thấy
+                                                            là văn bản đặc biệt được hiển thị với hình ảnh</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="navbar__notify-item navbar__notify-item--viewed">
+                                                <a href="" class="navbar__notify-link">
+                                                    <img src="assets/image/notify.png" alt=""
+                                                        class="navbar__notify-img">
+                                                    <div class="navbar__notify-info">
+                                                        <span class="navbar__notify-name">Trang sức Ohui Chính
+                                                            Hãng</span>
+                                                        <span class="navbar__notify-descriotion">Trang sức Ohui Chính
+                                                            Hãng
+                                                            Mỹ Phẩm
+                                                            Ohui Chính Hãng</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="navbar__notify-item navbar__notify-item--viewed">
+                                                <a href="" class="navbar__notify-link">
+                                                    <img src="assets/image/notify.png" alt=""
+                                                        class="navbar__notify-img">
+                                                    <div class="navbar__notify-info">
+                                                        <span class="navbar__notify-name">Trang sức Ohui Chính
+                                                            Hãng</span>
+                                                        <span class="navbar__notify-descriotion">Trang sức Ohui Chính
+                                                            Hãng</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <footer class="navbar__notify-footer">
+                                            <a href="" class="navbar__notify-footer-btn">Xem Tất Cả</a>
+                                        </footer>
+                                    </div>
                                 </li>
-                                <li class="header-icon__item">
+                                <li class="header-icon__item header-main-account">
                                     <a href="" class="header-icon__item-link">
                                         <img class="header-icon__item-img" src="assets/image/Union.png" alt="">
                                     </a>
+                                    <div class="header-has-account">
+                                        <div routerLink="/user/Login" class="header-has-account-item"> Log in</div>
+                                        <div routerLink="/user/Signup"
+                                            class="header-has-account-item account__register">
+                                            Register
+                                        </div>
+                                    </div>
                                 </li>
                                 <li class="header-icon__item">
                                     <a href="" class="header-icon__item-link">
                                         <img class="header-icon__item-img" src="assets/image/Group 442.png" alt="">
                                     </a>
+                                    <!-- No cart:  header__cart-list--no-cart -->
+                                    <div class="header__cart-list">
+                                        <img src="assets/img/no-cart.png" alt="" class="header__cart-no-cart-img">
+                                        <span class="header__cart-list--no-cart-msg">
+                                            Chưa có sản phẩm
+                                        </span>
+
+                                        <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                        <ul class="header__cart-list-item">
+                                            <!-- Cart item -->
+                                            <li class="header__cart-item">
+                                                <img src="https://cf.shopee.vn/file/a9e9ae5cbcf2d3fab989cfdec235cfe0"
+                                                    alt="" class="header__cart-img">
+                                                <div class="header__cart-item-info">
+                                                    <div class="header__cart-item-head">
+                                                        <h5 class="header__cart-item-name">Vòng cổ</h5>
+                                                        <div class="header__cart-item-price-wrap">
+                                                            <span class="header__cart-item-price">2.000.000đ</span>
+                                                            <span class="header__cart-item-multipl">x</span>
+                                                            <span class="header__cart-item-qnt">3</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="header__cart-item-body">
+                                                        <span class="header__cart-item-discription">
+                                                            Phân loại:Bạc
+                                                        </span>
+                                                        <span class="header__cart-item-remove">xóa</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="header__cart-item">
+                                                <img src="https://cf.shopee.vn/file/a9e9ae5cbcf2d3fab989cfdec235cfe0"
+                                                    alt="" class="header__cart-img">
+                                                <div class="header__cart-item-info">
+                                                    <div class="header__cart-item-head">
+                                                        <h5 class="header__cart-item-name">Vòng cổ</h5>
+                                                        <div class="header__cart-item-price-wrap">
+                                                            <span class="header__cart-item-price">2.000.000đ</span>
+                                                            <span class="header__cart-item-multipl">x</span>
+                                                            <span class="header__cart-item-qnt">3</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="header__cart-item-body">
+                                                        <span class="header__cart-item-discription">
+                                                            Phân loại:Bạc
+                                                        </span>
+                                                        <span class="header__cart-item-remove">xóa</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="header__cart-item">
+                                                <img src="https://cf.shopee.vn/file/a9e9ae5cbcf2d3fab989cfdec235cfe0"
+                                                    alt="" class="header__cart-img">
+                                                <div class="header__cart-item-info">
+                                                    <div class="header__cart-item-head">
+                                                        <h5 class="header__cart-item-name">Vòng cổ</h5>
+                                                        <div class="header__cart-item-price-wrap">
+                                                            <span class="header__cart-item-price">2.000.000đ</span>
+                                                            <span class="header__cart-item-multipl">x</span>
+                                                            <span class="header__cart-item-qnt">3</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="header__cart-item-body">
+                                                        <span class="header__cart-item-discription">
+                                                            Phân loại:Bạc
+                                                        </span>
+                                                        <span class="header__cart-item-remove">xóa</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                        <a class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+                                    </div>
                                 </li>
                             </ul>
                         </nav>
@@ -92,15 +244,49 @@
         </header>
         <!-- app__container  -->
         <div class="app__container">
-            <div class="grid">
-                <div class="container-slideShow">
-                    <img class="container-slideShow__img" src="assets/image/slider.png" alt="">
+            <div class="container__item container-slideShow">
+                <img class="container-slideShow__img" src="assets/image/slider.png" alt="">
+                <div class="container-slideShow__content">
+                    <p class="slideShow__content-title">DECORAZIONI PER LE FESTE</p>
+                    <button class="slide__btn btn">SHOP NOW</button>
+                </div>
+            </div>
+            <div class="container__item">
+                <div class="grid">
+                    <div class="container__wrap-category">
+                        <p class="container__title">SHOP BY CATEGORY</p>
+                        <div class="grid__row">
+                            <div class="grid__column-3">
+                                <div class="category-image">
+                                    <img src="assets/image/Rectangle.png" alt="">
+                                </div>
+                            </div>
+                            <div class="grid__column-3">
+                                <div class="category-image">
+                                    <img src="assets/image/Rectangle.png" alt="">
+                                </div>
+                            </div>
+                            <div class="grid__column-3">
+                                <div class="category-image">
+                                    <img src="assets/image/Rectangle.png" alt="">
+                                </div>
+                            </div>
+                            <div class="grid__column-3">
+                                <div class="category-image">
+                                    <img src="assets/image/Rectangle.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- footer  -->
-        <footer class="footer"></footer>
+        <footer class="footer">
+
+        </footer>
     </div>
 </body>
 
